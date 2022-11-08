@@ -1,0 +1,42 @@
+#Share div.social-links,
+#Share div.share-link,
+#Share div.qr-code {
+    padding: 0.5em 1em;
+}
+
+#Share div.SocialMediaShareButton {
+    cursor: pointer;
+}
+
+#Share div.share-option-pin {
+    display: flex;
+    margin: 0.25em;
+    align-items: center;
+    padding: 0.5em 0 1em 0;
+    border-bottom: 1px solid @item_border@;
+}
+
+#Share div.share-option-pin > span:first-child {
+    flex: 0 0 auto;
+    padding-right: 0.5em;
+}
+
+#Share div.share-option-pin > span:last-child {
+    flex: 1 1 auto;
+}
+
+#Share div.share-body {
+    position: relative;
+}
+
+#Share div.share-reload-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: @container_bg@EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,8 @@
+div.VectorLayerPicker {
+    display: flex;
+    align-items: center;
+}
+
+div.VectorLayerPicker > select {
+    flex: 1 1 auto;
+}

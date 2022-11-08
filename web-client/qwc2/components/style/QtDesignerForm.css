@@ -1,0 +1,256 @@
+div.qt-designer-form {
+    overflow: auto;
+}
+
+div.qt-designer-form input[type=text],
+div.qt-designer-form input[type=number],
+div.qt-designer-form input[type=date],
+div.qt-designer-form input[type=time],
+div.qt-designer-form input[type=datetime-local],
+div.qt-designer-form select {
+    border: 1px solid @item_border@;
+    background-color: white;
+    padding: 0.25em;
+    height: 2em;
+}
+
+div.qt-designer-form input:read-only,
+div.qt-designer-form select:disabled,
+div.qt-designer-form textarea:read-only {
+    color: #999;
+    background-color: #EEE;
+}
+
+div.qt-designer-form input:invalid,
+div.qt-designer-form select:invalid,
+div.qt-designer-form textarea:invalid {
+    background-color: #FFAAAA;
+}
+
+div.qt-designer-form input[type=range] {
+    background-color: transparent;
+    height: 2em;
+}
+
+div.qt-designer-form textarea {
+    border: 1px solid @item_border@;
+    background-color: white;
+    padding: 0.25em;
+    height: 100%;
+}
+
+div.qt-designer-form label > input {
+    margin-right: 0.25em;
+}
+
+div.qt-designer-layout-grid {
+    display: grid;
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    height: 100%;
+}
+
+div.qt-designer-layout-grid > div {
+    display: flex;
+    align-items: center;
+}
+
+div.qt-designer-layout-grid > div > *:not(.qt-designer-form-vline) {
+    width: 100%;
+}
+
+div.qt-designer-layout-vbox {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+div.qt-designer-layout-hbox {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+div.qt-designer-layout-hbox > div,
+div.qt-designer-layout-vbox > div {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+div.qt-designer-form-hline {
+    border-bottom: 1px solid @item_border@;
+}
+
+div.qt-designer-form-vline {
+    border-right: 1px solid @item_border@;
+    height: 100%;
+}
+
+div.qt-designer-form-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.qt-designer-form-frame-title {
+    font-weight: bold;
+    flex: 0 0 auto;
+}
+
+div.qt-designer-form-frame {
+    padding: 0.25em;
+    flex: 1 1 auto;
+    width: 100%;
+    border: 1px solid @item_border@;
+}
+
+div.qt-designer-form-tabbar {
+    overflow-x: auto;
+}
+
+div.qt-designer-form-tabbar > span {
+    padding: 0.25em;
+    border-left: 1px solid @item_border@;
+    border-top: 1px solid @item_border@;
+    display: inline-block;
+    background-color: @button_bg@;
+    height: 2em;
+    display: inline-flex;
+    align-items: center;
+}
+
+div.qt-designer-form-tabbar > span:last-child {
+    border-right: 1px solid @item_border@;
+}
+
+div.qt-designer-form-tabbar > span.qt-designer-form-tab-active {
+    background-color: @item_active@;
+    color: white;
+}
+
+div.qt-designer-widget-relation {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.qt-designer-widget-relation-table-container {
+    overflow-y: auto;
+    flex: 1 1 auto;
+    height: 3.5em;
+}
+
+div.qt-designer-widget-relation-table-container > table {
+    width: 100%;
+    border: 1px solid @item_border@;
+}
+
+div.qt-designer-widget-relation-table-container > table td {
+    padding: 0.25em 0.125em;
+    text-align: center;
+}
+
+div.qt-designer-widget-relation-table-container > table td.qt-designer-widget-relation-record-icon {
+    width: 1px;
+}
+div.qt-designer-widget-relation-table-container > table td.qt-designer-widget-relation-row-widget > * {
+    width: 100%;
+}
+
+div.qt-designer-widget-relation-table-container > table td > label {
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+div.qt-designer-widget-relation-table-container > table th {
+    background-color: @item_border@;
+    color: white;
+}
+
+div.qt-designer-widget-relation-table-container > table tr:not(:last-child) {
+    border-bottom: 1px solid @item_border@;
+}
+
+tr.qt-designer-widget-relation-record-deleted {
+    background-color: rgb(255,127,127);
+}
+
+div.qt-designer-widget-relation-buttons {
+    flex: 0 0 auto;
+}
+
+button.qt-designer-widget-relation-add {
+    border: 1px solid @item_border@;
+    width: 100%;
+    padding: 0.25em;
+    background-color: @button_bg@;
+}
+
+div.qt-designer-form label {
+    display: flex;
+    align-items: center;
+}
+
+span.qt-designer-form-datetime {
+    display: flex;
+    border: 1px solid @item_border@;
+    gap: 2px;
+}
+
+span.qt-designer-form-datetime > input[type="date"],
+span.qt-designer-form-datetime > input[type="time"] {
+    border: 0;
+    flex: 1 1 auto;
+}
+
+div.qt-designer-form-featurelink-buttons {
+    display: flex;
+}
+
+div.qt-designer-form-featurelink-buttons > div.ButtonBar {
+    flex: 1 1 auto;
+}
+
+div.qt-designer-form-featurelink-buttons > button.button {
+    margin: 0.25em 0;
+}
+
+div.qt-designer-report {
+    background-color: white;
+}
+
+div.qt-designer-report input,
+div.qt-designer-report textarea,
+div.qt-designer-report select {
+    border: none;
+    outline: none;
+}
+
+div.qt-designer-report select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+div.qt-designer-form-textarea {
+    padding: 0.25em;
+    white-space: pre-wrap;
+}
+
+div.qt-designer-form-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+div.qt-designer-form-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.qt-designer-form-loading > div.spinner {
+    width: 4em;
+    height: 4em;
+    margin-right: 1em;
+}

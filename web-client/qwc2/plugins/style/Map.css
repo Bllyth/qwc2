@@ -1,0 +1,58 @@
+div#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/** Move and re-style scalebar */
+div.ol-scale-line {
+    z-index: 101;
+    bottom: 3px !important;
+    left: 3px!important;
+    background-color: transparent!important;
+}
+
+div.ol-scale-line > div.ol-scale-line-inner {
+    color: @panel_fg@!important;
+    border-color: @panel_fg@!important;
+}
+
+/* Move and re-style rotation reset button */
+div.ol-rotate {
+    padding: 0;
+    top: 4em!important;
+    right: 0.5em!important;
+}
+
+div.ol-rotate button {
+    font-size: 1.25em!important;
+    background-color: @panel_fg@!important;
+}
+
+div.ol-overlaycontainer-stopevent {
+    z-index: 101!important;
+}
+
+span.map-loading-indicator {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: @panel_fg@;
+    background-color: @panel_bg@;
+    box-shadow: 0 -2px 4px rgba(136, 136, 136, 0.5);
+    position: absolute;
+    bottom: 2.7em;
+    left: 0.25em;
+    padding: 0.25em;
+    border-radius: 0.25em;
+    font-size: small;
+}
+
+span.map-loading-indicator > div.spinner {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 0.25em;
+}

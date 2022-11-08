@@ -1,0 +1,54 @@
+div.time-manager-notemporaldata {
+    padding: 1em;
+}
+
+div.time-manager-toolbar {
+    margin: 0.25em;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.time-manager-toolbar > * {
+    margin: 0.125em;
+}
+
+div.time-manager-toolbar input,
+div.time-manager-toolbar select {
+    border: 1px solid @item_border@;
+    height: 2em;
+    width: 6em;
+}
+
+div.time-manager-toolbar div.ToggleSwitch {
+    width: 6em;
+    margin-left: 0.25em;
+}
+
+span.time-manager-toolbar-block {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+span.time-manager-toolbar-spacer {
+    flex: 1 1 auto;
+}
+
+span.time-manager-options-menubutton {
+    position: relative;
+}
+
+div.time-manager-options {
+    padding: 0.25em;
+    position: absolute;
+    right: 0;
+    top: calc(100% - 1px);
+    border: 1px solid @item_border@;
+    background-color: white;
+    z-index: 2;
+}
+
+div.time-manager-options td {
+    white-space: nowrap;
+}

@@ -276,8 +276,7 @@ class ImportLayer extends React.Component {
     reader.onload = (ev) => {
       if (file.name.toLowerCase().endsWith(".kmz")) {
         const kmlFile = this.extractKMZ(ev.target.result).then((kml) => kml);
-
-        console.log("kmlFile", kmlFile);
+        kmlFile.then((f) => this.addKMLLayer(file.name, f));
       } else if (file.name.toLowerCase().endsWith(".kml")) {
         this.addKMLLayer(file.name, ev.target.result);
       } else if (file.name.toLowerCase().endsWith(".geojson") || file.name.toLowerCase().endsWith(".json")) {
@@ -291,7 +290,7 @@ class ImportLayer extends React.Component {
       }
       this.setState({ file: null });
     };
-    reader.readAsText(this.state.file);
+    reader.readAsBinaryString(this.state.file);
   };
   addKMLLayer = (filename, data) => {
     this.addGeoJSONLayer(filename, { features: VectorLayerUtils.kmlToGeoJSON(data) });

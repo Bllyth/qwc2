@@ -39,17 +39,17 @@
     ],
     "groups": [
       {
-        "title": "Dev Tests",
+        "title": "2Africa",
         "items": [
           {
-            "title": "Demo",
+            "title": "2Africa",
             "url": "http://qwc2.sourcepole.ch/ows/qwc_demo",
             "default": true,
             "attribution": "WIOCC",
             "attributionUrl": "https://wiocc.net/",
             "backgroundLayers": [
               {
-                "name": "bluemarble",
+                "name": "mapnik",
                 "printLayer": "bluemarble_bg",
                 "visibility": true
               },

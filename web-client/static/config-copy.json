@@ -319,6 +319,22 @@
         }
       },
       {
+        "name": "TaskButton",
+        "cfg": {
+          "position": 5,
+          "task": "LayerTree",
+          "icon": "list-alt"
+        }
+      },
+      {
+        "name": "TaskButton",
+        "cfg": {
+          "position": 6,
+          "task": "Editing",
+          "icon": "editing"
+        }
+      },
+      {
         "name": "HomeButton",
         "cfg": {
           "position": 4
@@ -385,7 +401,13 @@
               "target": "iframe"
             }
           ],
-          "toolbarItems": [],
+          "toolbarItems": [
+            { "key": "Measure", "mode": "LineString", "icon": "measure_line" },
+            { "key": "Measure", "mode": "Polygon", "icon": "measure_polygon" },
+            { "key": "Print", "icon": "print" },
+            { "key": "Identify", "icon": "identify_region", "mode": "Region" },
+            { "key": "FeatureForm", "icon": "featureform" }
+          ],
           "searchOptions": {
             "minScaleDenom": 1000,
             "showProviderSelection": true,
